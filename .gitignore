@@ -1,0 +1,15 @@
+# Ignore kernel module build artifacts
+*.ko
+*.mod.c
+*.mod.o
+*.o
+*.order
+*.symvers
+*.cmd
+.tmp_versions/
+Module.symvers
+modules.order
+
+# Ignore temporary files
+*.swp
+*.swo
