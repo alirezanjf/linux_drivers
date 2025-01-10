@@ -91,14 +91,14 @@ static ssize_t driver_write(struct file *File, const char *user_buffer, size_t c
 /* @brief This function is called when device file is opened */
 static int driver_open(struct inode *device_file, struct file *instance){
 
-	printk("dev_nr open func was called!\n");
+	printk("Driver is opened!\n");
 	return 0;
 }
 
 /* @brief This function is called when device file is closed */
 static int driver_close(struct inode *device_file, struct file *instance){
 
-	printk("dev_nr close func was called!\n");
+	printk("Driver is closed!\n");
 	return 0;	
 }
 
