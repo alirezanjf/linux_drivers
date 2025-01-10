@@ -1,4 +1,5 @@
 # Ignore kernel module build artifacts
+*.mod
 *.ko
 *.mod.c
 *.mod.o
