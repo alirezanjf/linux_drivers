@@ -4,15 +4,15 @@
 
 used this to remove pre-installed qemu:
  ~~~
- sudo apt-get autoremove qemu*
+sudo apt-get autoremove qemu*
  ~~~
 
 some requirements:
 ~~~
-  sudo apt-get install build-essential zlib1g-dev pkg-config libglib2.0-dev \
+sudo apt-get install build-essential zlib1g-dev pkg-config libglib2.0-dev \
 binutils-dev libboost-all-dev autoconf libtool libssl-dev libpixman-1-dev \
 ~~~
-install qemu:
+Install qemu:
   ~~~
 sudo apt install qemu-system
 ~~~
