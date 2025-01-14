@@ -1,4 +1,4 @@
-# Qemu and Raspberry Pi emulation
+# Qemu and Raspberry Pi emulation (from: https://interrupt.memfault.com/blog/emulating-raspberry-pi-in-qemu)
 
 used this to remove pre-installed qemu:
  ~~~
@@ -15,7 +15,15 @@ Install qemu:
 sudo apt install qemu-system
 ~~~
 
--Rpi image from here: https://www.raspberrypi.com/software/operating-systems/ and decompress with:
+Rpi image download and decompression
 ~~~
-xz --decompress 2024-11-19-raspios-bookworm-arm64-full.img.xz 
+wget https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2023-05-03/2023-05-03-raspios-bullseye-arm64.img.xz
+
+xz -d 2023-05-03-raspios-bullseye-arm64.img.xz
 ~~~
+
+Inspecting the partitions:
+~~~
+fdisk -l ./2023-05-03-raspios-bullseye-arm64.img
+~~~
+
