@@ -102,3 +102,9 @@ ssh -p 2222 pi@localhost
 password: [enter your password]
 ~~~
 
+
+# Available peripherals:
+Inspect the device tree by
+~~~
+dtc -I fs /sys/firmware/devicetree/base
+~~~
