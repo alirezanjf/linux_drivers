@@ -1,5 +1,7 @@
-# Qemu and Raspberry Pi emulation (from: https://interrupt.memfault.com/blog/emulating-raspberry-pi-in-qemu)
+# Qemu and Raspberry Pi emulation 
+(from: https://interrupt.memfault.com/blog/emulating-raspberry-pi-in-qemu)
 
+## Requirements and rpi3b image
 used this to remove pre-installed qemu:
  ~~~
 sudo apt-get autoremove qemu*
