@@ -3,9 +3,9 @@
 -Rpi image from here: https://www.raspberrypi.com/software/operating-systems/
 
 used this to remove pre-installed qemu:
- '''
- {sudo apt-get autoremove qemu* }
- '''
+ ~~~
+ sudo apt-get autoremove qemu*
+ ~~~
 
 some requirements:
   sudo apt-get install build-essential zlib1g-dev pkg-config libglib2.0-dev \
