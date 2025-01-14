@@ -103,8 +103,14 @@ password: [enter your password]
 ~~~
 
 
-# Available peripherals:
+# Raspberry pi stuff:
+## Available peripherals:
 Inspect the device tree by
 ~~~
 dtc -I fs /sys/firmware/devicetree/base
+~~~
+
+## Sharing file over SSH:
+~~~
+sudo scp -P [port_numer] /path/to/file pi@localhost:/dest_path
 ~~~
